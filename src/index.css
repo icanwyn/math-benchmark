@@ -829,6 +829,305 @@ input {
   white-space: pre-wrap;
 }
 
+.hook-body {
+  background: linear-gradient(135deg, #fdf4ff 0%, #eff6ff 100%);
+  border: 2px solid #e9d5ff;
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+}
+
+.summary-body {
+  background: linear-gradient(135deg, #ecfdf5 0%, #f0f9ff 100%);
+  border: 2px solid #a7f3d0;
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+}
+
+.summary-body p {
+  color: #065f46;
+}
+
+/* Domain intro */
+.domain-intro-hero {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: var(--soft);
+  border: 3px solid #c4b5fd;
+  border-radius: 20px;
+  padding: 1.15rem 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.domain-intro-emoji {
+  font-size: 3rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.domain-intro-label {
+  margin: 0;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #7c3aed;
+}
+
+.domain-intro-hero h1 {
+  margin-bottom: 0.25rem;
+}
+
+.domain-intro-note {
+  margin: 0.5rem 0 0;
+  font-weight: 700;
+  color: #475569;
+}
+
+/* Section type badges */
+.section-type {
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #5b21b6;
+  background: #ede9fe;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+}
+
+.section-type.type-hook {
+  background: #fce7f3;
+  color: #9d174d;
+}
+
+.section-type.type-vocab {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.section-type.type-strategy {
+  background: #cffafe;
+  color: #0e7490;
+}
+
+.section-type.type-example {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.section-type.type-mistakes {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.section-type.type-practice {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.section-type.type-check {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.section-type.type-summary {
+  background: #d1fae5;
+  color: #047857;
+}
+
+/* Vocabulary cards */
+.vocab-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.vocab-card {
+  display: grid;
+  gap: 0.25rem;
+  background: linear-gradient(90deg, #f5f3ff 0%, #faf5ff 100%);
+  border: 2px solid #ddd6fe;
+  border-left: 5px solid #7c3aed;
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+}
+
+.vocab-term {
+  color: #5b21b6;
+  font-size: 1.05rem;
+  font-family: var(--display);
+}
+
+.vocab-def {
+  color: #334155;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Strategy steps */
+.strategy-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: grid;
+  gap: 0.6rem;
+  counter-reset: none;
+}
+
+.strategy-step {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: #f0fdfa;
+  border: 2px solid #99f6e4;
+  border-radius: 14px;
+  padding: 0.8rem 0.95rem;
+  font-weight: 700;
+  color: #134e4a;
+}
+
+.strategy-num {
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d9488, #14b8a6);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+/* Worked examples */
+.example-panel {
+  background: linear-gradient(160deg, #fffbeb 0%, #fef3c7 100%);
+  border: 2px solid #fcd34d;
+  border-radius: 18px;
+  padding: 1rem 1.1rem;
+  margin-top: 0.25rem;
+}
+
+.example-problem {
+  background: white;
+  border-radius: 12px;
+  padding: 0.75rem 0.9rem;
+  margin-bottom: 0.85rem;
+  border: 2px dashed #fbbf24;
+}
+
+.example-problem p {
+  margin: 0 0 0.35rem;
+  font-weight: 800;
+  color: #92400e;
+}
+
+.example-problem p:last-child {
+  margin-bottom: 0;
+}
+
+.example-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.example-steps li {
+  display: grid;
+  gap: 0.2rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 0.65rem 0.8rem;
+  font-weight: 700;
+  color: #334155;
+  border-left: 4px solid #f59e0b;
+}
+
+.example-step-label {
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #b45309;
+}
+
+/* Common mistakes */
+.mistakes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.mistake-card {
+  background: #fff;
+  border: 2px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.mistake-row {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  border-radius: 12px;
+  padding: 0.65rem 0.75rem;
+}
+
+.mistake-row p {
+  margin: 0.15rem 0 0;
+  font-weight: 600;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.mistake-row strong {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.mistake-row.wrong {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.mistake-row.wrong strong {
+  color: #b91c1c;
+}
+
+.mistake-row.right {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+}
+
+.mistake-row.right strong {
+  color: #047857;
+}
+
+.mistake-row.fix {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+}
+
+.mistake-row.fix strong {
+  color: #b45309;
+}
+
+.mistake-icon {
+  font-size: 1.15rem;
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
 .focus-list {
   list-style: none;
   padding: 0;
@@ -902,12 +1201,55 @@ input {
   flex-shrink: 0;
 }
 
+.practice-num.check-num {
+  background: #2563eb;
+}
+
+.practice-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.practice-hint {
+  background: #fff7ed;
+  color: #9a3412;
+  font-weight: 700;
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #fed7aa;
+}
+
 .practice-a {
   background: #ecfdf5;
   color: #065f46;
   font-weight: 800;
   padding: 0.55rem 0.75rem;
   border-radius: 10px;
+}
+
+.check-item {
+  border-color: #bfdbfe;
+  background: #f8fbff;
+}
+
+.check-reveal {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.check-explanation {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e3a8a;
+  font-weight: 600;
+  padding: 0.65rem 0.8rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.check-explanation strong {
+  color: #1d4ed8;
 }
 
 .miss-card {
@@ -952,11 +1294,35 @@ input {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1.25rem;
 }
 
 .lesson-nav .btn-primary {
   width: auto;
   min-width: 10rem;
+}
+
+.lesson-card {
+  max-width: 100%;
+}
+
+@media (max-width: 520px) {
+  .domain-intro-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .practice-actions {
+    flex-direction: column;
+  }
+
+  .practice-actions .btn {
+    width: 100%;
+  }
+
+  .wrap-stats {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Complete */
