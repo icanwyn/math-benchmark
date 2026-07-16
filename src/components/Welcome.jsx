@@ -5,6 +5,8 @@ const GRADES = [
   { value: 4, label: '4th Grade', emoji: '🚀', desc: 'Multi-digit math & fractions' },
   { value: 5, label: '5th Grade', emoji: '⭐', desc: 'Decimals, volume & more' },
   { value: 6, label: '6th Grade', emoji: '🏆', desc: 'Ratios, percents & integers' },
+  { value: 7, label: '7th Grade', emoji: '🎯', desc: 'Proportions, equations & rational numbers' },
+  { value: 8, label: '8th Grade', emoji: '💎', desc: 'Linear equations, Pythagorean theorem' },
 ]
 
 export default function Welcome({ onStart }) {
@@ -40,7 +42,7 @@ export default function Welcome({ onStart }) {
       <div className="card hero-card">
         <div className="badge-row">
           <span className="pill">Adaptive · i-Ready style</span>
-          <span className="pill pill-soft">Grades 3–6</span>
+          <span className="pill pill-soft">Grades 3–8</span>
         </div>
 
         <h1 className="hero-title">

@@ -1,7 +1,7 @@
 import { DOMAINS } from './questionBank'
 
 /**
- * Comprehensive mini-unit lessons keyed by domain (grades 3–6).
+ * Comprehensive mini-unit lessons keyed by domain (grades 3–8).
  * Section types: hook | vocab | teach | strategy | example | mistakes | practice | check | summary
  */
 export const LESSONS = {
@@ -1016,7 +1016,151 @@ export const LESSONS = {
       {
         type: 'summary',
         title: 'Quick Review & Takeaways',
-        body: '⭐ Ratios compare two quantities — order matters.\n⭐ Equivalent ratios: multiply/divide BOTH parts equally.\n⭐ Percent = per 100; convert then multiply for “percent of.”\n⭐ Benchmarks: 50%, 25%, 10% make mental math fast.\n⭐ Label your comparisons so you never flip the order.\n\nScale it, percent it, check it — you have ratio power!',
+        body: '⭐ Ratios compare two quantities — order matters.\n⭐ Equivalent ratios: multiply/divide BOTH parts equally.\n⭐ Percent = per 100; convert then multiply for “percent of.”\n⭐ Benchmarks: 50%, 25%, 10% make mental math fast.\n⭐ Proportions: scale both sides or cross-multiply.\n⭐ Percent change = (new − old) / old × 100%.\n⭐ Label your comparisons so you never flip the order.\n\nScale it, percent it, check it — you have ratio power!',
+      },
+    ],
+  },
+  expressions: {
+    title: 'Expressions & Equations',
+    emoji: '🔤',
+    minutes: 15,
+    sections: [
+      {
+        type: 'hook',
+        title: 'Why Algebra Skills Matter',
+        body: 'Expressions and equations are the language of middle school math — and of science, coding, and problem-solving later on.\n\nWhen you can plug in a value, solve for x, and simplify with the distributive property, word problems stop feeling like mysteries. Grades 6–8 build this power step by step. You’ve got this!',
+      },
+      {
+        type: 'vocab',
+        title: 'Key Vocabulary',
+        terms: [
+          { term: 'Variable', definition: 'A letter (like x) that stands for an unknown or changing number.' },
+          { term: 'Expression', definition: 'A math phrase with numbers, operations, and maybe variables — no equals sign (e.g., 3x + 5).' },
+          { term: 'Equation', definition: 'A statement that two expressions are equal (e.g., 3x + 5 = 17).' },
+          { term: 'Coefficient', definition: 'The number multiplied by a variable. In 7x, the coefficient is 7.' },
+          { term: 'Like terms', definition: 'Terms with the same variable part (3x and 5x are like; 3x and 5y are not).' },
+          { term: 'Distributive property', definition: 'a(b + c) = ab + ac. Multiply the outside factor by each term inside.' },
+        ],
+      },
+      {
+        type: 'teach',
+        title: 'Evaluating Expressions',
+        body: 'To evaluate means “plug in and calculate.”\n\nIf x = 4, what is 3x + 5?\n• Replace x with 4: 3(4) + 5\n• Multiply first: 12 + 5\n• Add: 17\n\nAlways use order of operations after you substitute. Parentheses help when a value is negative: if x = −2, write 3(−2) so the signs stay clear.',
+      },
+      {
+        type: 'teach',
+        title: 'Solving One- and Two-Step Equations',
+        body: 'An equation is a balanced scale. Whatever you do to one side, do to the other.\n\nOne-step:\n• x + 7 = 20 → subtract 7 → x = 13\n• 5x = 45 → divide by 5 → x = 9\n\nTwo-step (undo in reverse order):\n• 2x + 3 = 11\n• Subtract 3: 2x = 8\n• Divide by 2: x = 4\n\nCheck by substituting back into the original equation.',
+      },
+      {
+        type: 'teach',
+        title: 'Distribute & Combine Like Terms',
+        body: 'Distributive property:\n• 4(x + 3) = 4x + 12\n• 3(2x − 5) = 6x − 15\n\nCombine like terms:\n• 5x + 2 + 3x + 7 = (5x + 3x) + (2 + 7) = 8x + 9\n\nOnly combine terms that match. 4x and 4 are NOT like terms — one has x, one is a constant.\n\nThese skills unlock longer equations in grades 7–8.',
+      },
+      {
+        type: 'strategy',
+        title: 'Strategy: Solve a Two-Step Equation',
+        steps: [
+          'Write the equation clearly (optional: box the variable term).',
+          'Undo addition/subtraction first to isolate the term with x.',
+          'Undo multiplication/division to solve for x.',
+          'Simplify carefully with integer signs.',
+          'Check: substitute your answer into the original equation.',
+          'If both sides match, you’re done!',
+        ],
+      },
+      {
+        type: 'example',
+        title: 'Worked Example 1: Evaluate',
+        body: 'Problem: If n = 6, what is 2n − 5?',
+        steps: [
+          'Substitute: 2(6) − 5.',
+          'Multiply: 12 − 5.',
+          'Subtract: 7.',
+          'Why: Substitution turns an expression into a pure number problem; PEMDAS finishes it.',
+        ],
+      },
+      {
+        type: 'example',
+        title: 'Worked Example 2: Two-Step Equation',
+        body: 'Problem: Solve 3x + 4 = 19.',
+        steps: [
+          'Subtract 4 from both sides: 3x = 15.',
+          'Divide both sides by 3: x = 5.',
+          'Check: 3(5) + 4 = 15 + 4 = 19 ✓',
+          'Why: Inverse operations peel the equation like layers until x stands alone.',
+        ],
+      },
+      {
+        type: 'example',
+        title: 'Worked Example 3: Distribute',
+        body: 'Problem: Simplify 5(2 + 3).',
+        steps: [
+          'Multiply 5 by each term: 5·2 + 5·3.',
+          'Compute: 10 + 15 = 25.',
+          'Same as 5 × 5 = 25 — distributing must match the grouped value.',
+          'Why: Distributing spreads the factor across a sum without changing the total.',
+        ],
+      },
+      {
+        type: 'mistakes',
+        title: 'Common Mistakes',
+        items: [
+          {
+            wrong: 'Doing operations in the wrong order after substituting (e.g., 3 + 4 × 2 as 14)',
+            right: 'Multiply/divide before add/subtract unless parentheses say otherwise',
+            fix: 'Underline × and ÷ first; star + and − second.',
+          },
+          {
+            wrong: 'Only undoing one side of an equation',
+            right: 'Whatever you do to one side, do to the other',
+            fix: 'Write the same operation under both sides.',
+          },
+          {
+            wrong: 'Combining 3x + 5 into 8x',
+            right: '3x + 5 stays 3x + 5 (unlike terms)',
+            fix: 'Circle variable terms and box constants separately.',
+          },
+        ],
+      },
+      {
+        type: 'practice',
+        title: 'Guided Practice',
+        problems: [
+          { q: 'If x = 5, what is 4x + 1?', a: '21', hint: '4×5 = 20, then +1.' },
+          { q: 'Solve: x − 8 = 11', a: '19', hint: 'Add 8 to both sides.' },
+          { q: 'Solve: 6x = 42', a: '7', hint: 'Divide both sides by 6.' },
+          { q: 'Solve: 2x + 5 = 17', a: '6', hint: 'Subtract 5, then divide by 2.' },
+          { q: 'Simplify: 3(4 + 2)', a: '18', hint: '3×4 + 3×2, or 3×6.' },
+          { q: 'Combine: 4x + 3 + 2x + 5', a: '6x + 8', hint: '4x+2x and 3+5.' },
+        ],
+      },
+      {
+        type: 'check',
+        title: 'Check for Understanding',
+        problems: [
+          {
+            q: 'Why do we reverse operations when solving equations?',
+            a: 'To isolate the variable while keeping both sides equal',
+            explanation:
+              'An equation stays true if both sides change the same way. Inverse operations unwrap the expression around x until x is alone.',
+          },
+          {
+            q: 'Evaluate 5x − 3 when x = 4. Show the steps.',
+            a: '17',
+            explanation: '5(4) − 3 = 20 − 3 = 17. Substitution, then multiply, then subtract.',
+          },
+          {
+            q: 'Solve 4x − 6 = 14 and check your answer.',
+            a: 'x = 5',
+            explanation: 'Add 6: 4x = 20. Divide by 4: x = 5. Check: 4(5) − 6 = 20 − 6 = 14 ✓',
+          },
+        ],
+      },
+      {
+        type: 'summary',
+        title: 'Quick Review & Takeaways',
+        body: '⭐ Substitute carefully, then use order of operations.\n⭐ Equations stay balanced — same move on both sides.\n⭐ One-step: one inverse operation. Two-step: undo +/− first, then ×/÷.\n⭐ Distribute: a(b + c) = ab + ac.\n⭐ Combine only like terms.\n⭐ Always check by plugging your solution back in.\n\nYou speak algebra — keep practicing and it gets fluent!',
       },
     ],
   },
@@ -1124,11 +1268,14 @@ export function buildLessonPlan(answers, studentName, grade) {
       ? correctLevels.reduce((s, n) => s + n, 0) / correctLevels.length
       : 1
 
+  // Placement bands aligned with adaptive levels 1–14
   let placement = 'Grade 3'
-  if (avgLevel >= 8.5) placement = 'Grade 6+'
-  else if (avgLevel >= 7) placement = 'Grade 6'
-  else if (avgLevel >= 5.5) placement = 'Grade 5'
-  else if (avgLevel >= 4) placement = 'Grade 4'
+  if (avgLevel >= 13) placement = 'Grade 8+'
+  else if (avgLevel >= 11.5) placement = 'Grade 8'
+  else if (avgLevel >= 10) placement = 'Grade 7'
+  else if (avgLevel >= 8.5) placement = 'Grade 6'
+  else if (avgLevel >= 7) placement = 'Grade 5'
+  else if (avgLevel >= 5) placement = 'Grade 4'
   else if (avgLevel >= 2.5) placement = 'Grade 3'
   else placement = 'Building Grade 3 skills'
 
